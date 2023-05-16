@@ -1,0 +1,13 @@
+body{
+    padding: 10px;
+    padding-left: 100px;
+}
+.buscador{
+    margin-top: 50px;
+    margin-right: 300px;
+    margin-left: 0px;
+}
+#coment{
+    padding: 10px;
+    border: 1px solid black;
+}
