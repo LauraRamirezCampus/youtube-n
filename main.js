@@ -18,11 +18,22 @@ const options = {
 try {
 	const response = await fetch(url, options);
 	const result = await response.json();
-	//console.log(result);
-	//console.log(result.comments[0].author);
-    /* console.log(result.comments[0].content); */
+	console.log(result,);
+	console.log(result.comments[0].author,"A");
+	console.log(result.comments[0].author.avatar[0].url);
+    //console.log(result.comments[0].content ,"A"); 
     for(let i=0; i< result.comments.length; i++){
-    document.getElementById("comentarios").innerHTML+=`<div class=""><div id="coment">${result.comments[i].content}</div>`
+    document.getElementById("comentarios").innerHTML+=`<div class="">
+	<div id="coment">
+	<div class="row">
+	<div class="col-1"><img src="${result.comments[i].author.avatar[0].url}" alt=""></div>
+	<div class="col"><h5>${result.comments[i].author.title}</h5></div>
+	
+	
+	</div>
+	
+	
+	${result.comments[i].content}</div>`
 }
 } catch (error) {
 	console.error(error);
