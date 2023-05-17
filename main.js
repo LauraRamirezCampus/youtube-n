@@ -10,7 +10,7 @@ async function comentarios(){
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '2daa10056fmsh994f9baf16fad70p1bd676jsn58ae54cabb15',
+		'X-RapidAPI-Key': '2791634466msh68bd6379ab5dfdap1cb8bbjsnc5d9de46ed9e',
 		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
 	}
 };
@@ -34,11 +34,46 @@ try {
 	
 	
 	${result.comments[i].content}</div>`
+	}
+} catch (error) {
+	console.error(error);
+	}
 }
+
+async function video(){
+
+	const url = `https://youtube138.p.rapidapi.com/search/?q=${busca.value}&hl=en&gl=US`;
+const options = {
+	method: 'GET',
+	headers: {
+		'X-RapidAPI-Key': '2791634466msh68bd6379ab5dfdap1cb8bbjsnc5d9de46ed9e',
+		'X-RapidAPI-Host': 'youtube138.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.json();
+	console.log(result);
 } catch (error) {
 	console.error(error);
 }
 }
+
+
+
+
+
+
+
+let busca= document.getElementById("buscador");
+
+busca.addEventListener("input",(e)=>{
+	video()
+	console.log(busca.value);
+})
+
+
 comentarios()
 
 
