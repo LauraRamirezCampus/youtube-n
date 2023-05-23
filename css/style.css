@@ -1,17 +1,49 @@
 body{
     padding: 10px;
     padding-left: 100px;
+    background-color: rgb(180, 180, 255);
 }
 .buscador{
-    margin-top: 50px;
-    margin-right: 300px;
+    margin-top: 100px;
+    margin-right: 100px;
     margin-left: 0px;
+    margin-bottom: 50px;
+
 }
 #coment{
-    padding: 10px;
-    border: 1px solid black;
-    width: 50%;
+    padding: 50px;
+   
+    width: 90%;
+    background-color: rgb(123, 129, 248);
+    border-radius: 50px;
+    margin-bottom: 20px;
 }
 img{
     height: 30px;
 }
+.com{
+    width: 700px;
+    margin-bottom: 30px;
+}
+#comentarios{
+    height: 390px;
+    overflow: scroll;
+    
+}
+.logo {
+    width: 230px;
+    height: 200px;
+}
+#Descripcion{
+    width: 500px;
+}
+.rl{
+    height: 550px;
+}
+
+
+
+/* #relacion{
+    width: 400px;
+    overflow: scroll;
+} */

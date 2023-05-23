@@ -12,26 +12,26 @@
 </head>
 <body>
     <div class="row">
-        <div class="col"><img src="youtube.png" alt=""></div>
-        <form action="">
-        <div class="col-8 buscador"><div class="input-group">
+        <div class="col"><img src="https://icones.pro/wp-content/uploads/2021/02/youtube-logo-icone-bleue.png" class="logo" alt=""></div>
+        <div class="col-8 buscador"><form action="">
+            <div class="input-group">
             <input type="text" class="form-control" id="buscador" placeholder="buscar" aria-label="Input group example" aria-describedby="btnGroupAddon2">
-            <div class="input-group-text bg-danger" onclick="video() "  id="btnGroupAddon2 "><img src="buscar.png" alt=""></div>
-        </form>
-          </div>
-        </div> 
+            <div class="input-group-text bg-primary" onclick="video() "  id="btnGroupAddon2 ">
+                <img src="buscar.png" alt="">
+            </div>
+        </form></div>
+       
         
     </div>
 <div class="row">
     <div class="col " >
         <div id="video"></div>
+        <br>
         <h3 id="titulo"></h3>
         <div class="row">
-            <h3>videos relacionado</h3>
+            <h3 id="rel"></h3>
             <div class="row" id="relacion">
-                <div class="col">fi</div>
-                <div class="col">fi</div>
-                <div class="col">fpep</div>
+               
             </div>
             
         </div>
@@ -42,9 +42,9 @@
             <div class="col" id="logo"></div>
             <div class="col" id="nombre"></div>
         </div>
-        <h3>comentarios</h3>
         
-        <div id="comentarios"></div>
+        
+        <div id="comentarios" class="com"></div>
         <div id="Descripcion"></div>
     </div>
 </div>
