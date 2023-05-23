@@ -7,6 +7,9 @@
 //yout()}
 
 let id="";
+let id1="";
+let id2="";
+let id3="";
 async function video(){
 
 	const url = `https://youtube138.p.rapidapi.com/search/?q=${busca.value}&hl=en&gl=US`;
@@ -23,10 +26,24 @@ try {
 	const result = await response.json();
 	console.log(result);
 	console.log(result.contents[0].video.videoId);
-	let idd=result.contents[0].video.videoId;
 	console.log(idd);
+	for (let i =  < array.lengt++) {
+		const element = arr];
+		
+	}
+	let idd=result.contents[0].video.videoId;
 	id=idd;
-	document.getElementById("video").innerHTML=`<iframe width="560" height="315" src="https://www.youtube.com/watch?v=ixZ_3A5jzk0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`
+	document.getElementById("video").innerHTML=`<iframe width="560" height="315" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>`;
+	document.getElementById("relacion").innerHTML=`
+	<div class="col">
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+	<div class="col">
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>
+	<div class="col">
+	<iframe width="200" height="100" src="https://www.youtube.com/embed/${id}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+	</div>`
 	comentarios()
 	console.log(id,"id");
 } catch (error) {
